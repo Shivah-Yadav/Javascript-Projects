@@ -1,0 +1,127 @@
+html{
+    font-size:10px;
+    /* font-family: [Spartan](https://fonts.google.com/specimen/Spartan) */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main-container{
+    /* border:2px solid black; */
+    padding:30px;
+    /* align-content: center; */
+    width:70%;
+    margin-left:18rem
+    /* align-items: center; */
+}
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8rem;
+    line-height:0.9;
+}
+
+div h1{
+    font-size:3.8rem;
+    font-weight:bold;
+    font-weight: 700;
+    line-height:1;     
+    color:hsl(300, 43%, 22%);
+}
+.text{
+    font-size:1.8rem;
+    font-weight: 450;
+    color:hsl(0, 0%, 59%);
+    padding:0;
+    line-height:1.5;
+}
+.grid-right{
+    margin-top:2.5rem;
+}
+.box{
+    background-color:hsl(300, 24%, 96%);
+    color:hsl(300, 68%, 13%);
+    font-size:1.4rem;
+    font-weight:700;
+    border-radius:5px;
+    padding:1.4rem;
+    width: 30rem;
+    /* margin:2rem; */
+}
+.box::before{
+    content:'      ⭐⭐⭐⭐⭐         ';
+    padding-right:1rem
+}
+.second{
+    margin-left:5rem
+}
+.third{
+    margin-left:10rem
+}
+.cards{
+    margin-top:4.8rem;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+.profile-box{
+    display:flex;
+    gap:2rem;
+    line-height:0.5;
+}
+.card{
+    color:white;
+    width:25rem;
+    background-color:hsl(300, 43%, 22%);
+    /* display:flex; */
+    padding:3rem 2rem;
+    height:16rem;
+    border-radius:1rem;
+}
+.card img{
+    border-radius:50%;
+    margin-top:1rem
+}
+.context{
+    font-size:1.3rem;
+    line-height:1.5
+}
+.vb{
+    color:hsl(333, 80%, 67%);
+}
+.roberts{
+    margin-top:3rem;
+}
+.anne{
+    margin-top:6rem;
+}
+
+@media (max-width:34rem){
+    .main-container{
+        display:flex;
+        flex-direction:column;
+        margin:0;
+        font-weight:500;
+        /* font-size:1rem; */
+    }
+    h1{
+        font-size:4rem;
+        
+    }
+    .grid{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .text{
+        margin:0;
+    }
+    .grid-right{
+        margin:0;
+    }
+    .box{
+        margin:0;
+    }
+    .cards{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+}

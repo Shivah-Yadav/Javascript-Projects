@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up Today!</h2>
+        <form id="form">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter Fullname" 
+            required><br>
+
+            <label for="mobile">Mobile</label>
+            <input type="mobile" name="mobile" placeholder="Enter Mobile Number" 
+            required
+            pattern="[6789][0-9]{9}"
+            ><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Email" required><br>
+
+            <label for="url">Website URL</label>
+            <input type="text" name="url" placeholder="Enter Website URL" required><br>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" 
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="please enter 1 uppercase character,1 lower case character and 1 digit"
+            id="password"
+            ><br>
+
+            <label>Confirm password</label>
+            <input type="password" placeholder="Confirm Password" 
+            required
+            id="confirmPassword"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="please enter 1 uppercase character,1 lower case character and 1 digit"
+            ><br>
+
+            <input type="submit" value="Register" id="register">
+
+            <div class="hesitate" id="hesitate">
+                Dont Hesitate
+            </div>
+        </form>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

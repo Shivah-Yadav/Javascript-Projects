@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html{
+    font-size:10px;
+}
+
+body{
+    background-color: azure;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh
+}
+
+.profile-card{
+    cursor:default;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    height:fit-content;
+    background:linear-gradient(to bottom,#f44040 27%, white 27%) ;
+    border-radius: 20px;;
+    padding:3rem 1rem 3rem 1rem;
+    box-shadow:0 0 2px 2px rgb(231, 226, 226);
+}
+.image{
+    position:relative;
+    background-color:#f44040;
+    border-radius:50%;
+}
+.image img{
+    border:2px solid #fff;
+    border-radius:50%;
+}
+
+.header{
+    color:rgb(38, 39, 41);
+    text-align:center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+.links{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+.links a img{
+    width:40px;
+    height:40px;
+}
+
+.buttons{
+    padding:2rem;
+    display:flex;
+    gap: 2rem;
+}
+.buttons button{
+    color:white;
+    font-size: 2rem;
+    background-color:#e69500;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    border-radius:20px;
+    border:none;
+}
+.buttons button:hover{
+    transform:translateZ(1.2)
+}
+.buttons a{
+    color:white;
+    text-decoration: none;
+}
+.social{
+    display:flex;
+    gap:2rem;
+}
+.social div{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.social p{
+    font-size: 2rem;
+}
+
+.social img{
+    width:25px;
+    height:25px;
+    margin-right:0.5rem;
+}

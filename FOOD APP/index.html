@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Food Buzz</span>
+        </div>
+        <div class="search-data">
+            <input type="text" name="searchitem" placeholder="search for over 1,00,000 recipes" id="searchinput">
+            <i class="fa-solid fa-circle-xmark" id="remove"></i>
+            <button name="search" id="search">Search</button>
+        </div>
+        <div class="buttons">
+            <div class="add-recipe">
+                <button id="add-recipe">Add Recipe</button>
+            </div>
+            <div class="bookmarks">
+                <div class="childbookmark" id="childbookmark">
+                    Saved Items!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="pagination" id="pagination">
+        
+    </section>
+    
+    <section class="two-container">
+        <div class="left-container" id="left-container">
+            <h3>Recipes</h3>
+        </div>
+        <div class="right-container" id="right-container">
+            <h2 id="text"><i class="fa-solid fa-face-laugh-wink laugh" ></i> Start by searching for a recipe or an ingredient. Have fun!</h2>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="controller.js"></script>
+</body>
+</html>
