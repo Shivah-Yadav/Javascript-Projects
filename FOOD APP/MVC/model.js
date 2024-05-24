@@ -55,7 +55,6 @@ export async function recipe(data){
         const data = j[0].split(",")
         console.log(data)
         const  [quantity,unit,description] = data
-        console.log(data)
         return {quantity,unit,description}
     })
     console.log(data)

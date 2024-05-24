@@ -42,5 +42,3 @@ myForm.addEventListener('submit',function(e){
         hesitate.innerText = 'Passwords does not Match'
     }
 })
-
-// Shiva1234
